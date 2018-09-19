@@ -6,10 +6,17 @@ using namespace std;
 int main() {
 	int boolaid = 1;
 	int col = 0;
+	int zero = 500;
+	int one = 600;
+	int two = 700;
+	int three = 800;
+	int four = 900;
+	int five = 1000;
+	int six = 1100;
 
 	while (boolaid > 0) {
 		col++;
-		system("cls");
+		
 
 		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 		SetConsoleTextAttribute(hConsole, col);
@@ -17,8 +24,19 @@ int main() {
 		if (col == 255) {
 			col = 1;
 		}
-		Beep(523, 5); // 523 hertz (C5) for 5 milliseconds
-
+		Beep(zero, 500); 
+		Beep(three, 500);
+		Beep(five, 600);
+		Beep(zero, 500);
+		Beep(three, 500);
+		Beep(six, 400);
+		Beep(five, 400);
+		Beep(zero, 500);
+		Beep(three, 500);
+		Beep(five, 500);
+		Beep(six, 600);
+		Beep(five, 600);
+		system("cls");
 
 
 		cout << "    __  ___   _             _    _       __   _         " << endl
